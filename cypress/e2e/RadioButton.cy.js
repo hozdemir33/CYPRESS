@@ -17,7 +17,7 @@
         
             cy.get("[id='female'").should("not.be.checked")
 
-            cy.visit("https://www.yahoo.com/")
+            
 
 
     })
