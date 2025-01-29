@@ -1,4 +1,4 @@
-  // <reference types="Cypress" />
+   <reference types="Cypress" />
 
  describe("check UI Elements", () => {
 
@@ -11,17 +11,12 @@
             cy.get('[id="female"]').should("be.visible")//visibiliry of the of the radio button assetions
             
            
-           
             //selecting radio buttons
             cy.get("[id='male'").check().should("be.checked")
         
             cy.get("[id='female'").should("not.be.checked")
 
-            
-
-
     })
-
 
 
     it("Checking Check Boxes", () => {
