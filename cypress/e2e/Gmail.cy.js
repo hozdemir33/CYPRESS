@@ -12,8 +12,10 @@ describe("Gmail", ()=>{
      
      cy.get('[data-navigation="server"]').should("be.visible")
 
+     cy.request()
 
 
+     
     })
 })
 
