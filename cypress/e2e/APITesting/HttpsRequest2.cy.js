@@ -6,6 +6,29 @@ describe ("Http Request2", () => {
         cy.request("GET", "https://jsonplaceholder.typicode.com/posts/1")
         .its('status')
         .should('equal', 200);
-    })
+    });
 
-});  // Closing the describe block [double check this one please ]
+}); 
+
+    it("POST Call", () =>  {
+
+     cy.request({
+
+        method : "POST",
+        url : 'https://jsonplaceholder.typicode.com/posts',
+        body :{
+
+         id: 101,
+         title: "testers"
+
+        }
+
+    }).then((response)=> {
+
+        expect(response.status).to.eq(201);
+
+        })
+    
+     })
+    
+        
