@@ -8,16 +8,21 @@ describe ("Http Request", () =>{
 
     })
 
+
     it("POST Call", ()=> {
            cy.request({
-            method : 'Post',
+           
+            method : 'POST',
             url : 'https://jsonplaceholder.typicode.com/posts/',
             body:   {
+                   
                     name: "my name is tuba",
                     id: 101 ,
                     userid:222
+                   
                     }  
-            })
+            
+                })
 
             .its('status')
             .should('equal', 201);
@@ -29,9 +34,11 @@ describe ("Http Request", () =>{
          cy.request({
                  method: 'PUT',
                  url  : 'https://jsonplaceholder.typicode.com/posts/1' ,
-                 body :{
+                 body :
+                 {
                  name: "my name is tuba",
-                    id: 1
+                 id: 1
+               
                 }
 
          } )
@@ -41,9 +48,7 @@ describe ("Http Request", () =>{
 
     })
 
-       it('Delete Call', () =>
-        
-        {
+       it('Delete Call', () => {
 
         cy.request ({   
 
@@ -57,6 +62,7 @@ describe ("Http Request", () =>{
         })
                 
 });
+
 
 
 

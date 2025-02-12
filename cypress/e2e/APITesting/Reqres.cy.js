@@ -34,17 +34,12 @@ it("POST REQUEST", ()=>{
             url :"https://reqres.in/api/users" ,
             body: 
             {
-            
                     name: "hUSEYIN",
                     id: "333"
-                
             }
 
     } )
     .its('status')
     .should("equal", 201);
-
-
 })
-
 })
