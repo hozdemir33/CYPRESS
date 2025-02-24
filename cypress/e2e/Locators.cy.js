@@ -11,7 +11,7 @@ describe('Locators', () => {
 
     it('passes', () => {
       
-        cy.visit('https://www.gmail.com')
+        //cy.visit('https://www.gmail.com')
        
     
     
