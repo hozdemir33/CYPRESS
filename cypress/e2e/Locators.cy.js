@@ -1,20 +1,13 @@
 describe('Locators', () => {
     
-    it('passes', () => {
+    it('Testing Google UI', () => {
       
-        cy.visit('https://www.google.com')
-        cy.get("[class='gLFyf']").type("IPHONE 16 PRO")
+        cy.visit('https://www.google.com')  //Get on the Google UI 
+        cy.get("[class='gLFyf']").type("IPHONE 16 PRO") 
         cy.get("input[jsaction='trigger.kWlxhc']").click()
-    
     
     })
 
-    it('passes', () => {
-      
-        //cy.visit('https://www.gmail.com')
-       
-    
-    
-    })
-  })
+})
+
 
