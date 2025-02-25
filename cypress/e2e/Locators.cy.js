@@ -7,7 +7,6 @@ describe('Locators', () => {
         cy.get("input[jsaction='trigger.kWlxhc']").click()
     
     })
-
 })
 
 
