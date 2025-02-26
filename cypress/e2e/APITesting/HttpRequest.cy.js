@@ -8,20 +8,17 @@ describe ("Http Request", () =>{
 
     })
 
-
     it("POST Call", ()=> {
            cy.request({
            
             method : 'POST',
             url : 'https://jsonplaceholder.typicode.com/posts/',
             body:   {
-                   
                     name: "my name is tuba",
                     id: 101 ,
                     userid:222
-                   
-                    }  
-            
+                    }   
+              
                 })
 
             .its('status')
@@ -35,11 +32,10 @@ describe ("Http Request", () =>{
                  method: 'PUT',
                  url  : 'https://jsonplaceholder.typicode.com/posts/1' ,
                  body :
-                 {
-                 name: "my name is tuba",
+                       {
+                 name: "my name is tuba" ,
                  id: 1
-               
-                }
+                       }
 
          } )
 

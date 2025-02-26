@@ -4,12 +4,11 @@ describe("Get Request", ()=>{
 
        cy.request("GET","https://reqres.in/api/users/2")
          .its('status')
-         .should("equal", 200);
+         .should("equal", 201); //"200"
 
      })
 
      it("PUT CALL", ()=>{
-
      cy.request( {
 
              method:"PUT" ,
@@ -41,5 +40,6 @@ it("POST REQUEST", ()=>{
     } )
     .its('status')
     .should("equal", 201);
+
 })
 })
